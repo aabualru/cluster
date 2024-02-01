@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kubecost
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: kubecost
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  project: default
+  source:
+    path: apps/kubecost
+    repoURL: 'https://gitlab.consulting.redhat.com/aabualru/kubecost-cummins.git'
+    targetRevision: main
