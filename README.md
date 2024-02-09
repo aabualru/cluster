@@ -10,7 +10,11 @@ Afterwards, you should be able to deploy this using Gitops.
 
 ## Note on Usage
 
-This is the cluster repository.  It will allow deploying KubeCost and DynaTrace within a Kustomize strategy. Although you do need to clone the applications found in the apps repository (https://github.com/aabualru/apps), and they need to go in their own repository: in GitOps, you will simply point GitOps to this repository, at the cluster directory, and it will deploy the applications in the /apps repository on its own. In this way, it is more efficient, as it does not require anything more than adding an application manifest into the cluster directory, and that will deploy them.
+This is the cluster repository.  It will allow deploying KubeCost and DynaTrace within a Kustomize strategy.
+
+Although you do need to clone the applications found in the apps repository (https://github.com/aabualru/apps), and they need to go in their own repository: in GitOps, you will simply point GitOps to this ```cluster``` repository, at the cluster directory, and it will deploy the applications in the /apps repository on its own.
+
+In this way, it is more efficient, as it does not require anything more than adding an application manifest into the cluster directory, and that will deploy them.
 
 ## Other Instructions
 
