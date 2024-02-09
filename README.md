@@ -14,6 +14,6 @@ This is the cluster repository.  It will allow deploying KubeCost and DynaTrace 
 
 ## Other Instructions
 
-After adding the application in GitOps and pointing it to the /cluster directory, be sure to press ```refresh``` in the GitOps Console, and then press ```Sync``` to deploy them.
+After adding the application in GitOps and pointing it to the /cluster directory, be sure to press ```Refresh``` in the GitOps Console, and then press ```Sync``` to deploy them.
 
 If you need to add more applications, simply follow the same structure of the *-app.yaml files in the cluster directory, and then add the name of the new file into the kustomization.yaml file. Then, press refresh again, and press sync again.
