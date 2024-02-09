@@ -14,5 +14,5 @@ spec:
   project: default
   source:
     path: apps/dynatrace
-    repoURL: 'https://gitlab.consulting.redhat.com/aabualru/kubecost-cummins.git'
+    repoURL: '<repo>'
     targetRevision: main
