@@ -16,5 +16,5 @@ spec:
   project: default
   source:
     path: apps/kubecost
-    repoURL: '<repo>'
+    repoURL: 'https://github.com/aabualru/apps.git'
     targetRevision: main
