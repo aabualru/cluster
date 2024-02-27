@@ -16,5 +16,5 @@ spec:
   project: default
   source:
     path: apps/dynatrace
-    repoURL: '<repo>'
+    repoURL: 'https://github.com/aabualru/apps.git'
     targetRevision: main
