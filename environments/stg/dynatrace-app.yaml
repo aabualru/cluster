@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dynatrace
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: dynatrace
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  project: default
+  source:
+    path: apps/dynatrace
+    repoURL: '<repo>'
+    targetRevision: main
