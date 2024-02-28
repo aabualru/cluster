@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - kubecost-app.yaml
   - dynatrace-app.yaml
+  - externalsecrets-app.yaml
